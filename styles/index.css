@@ -271,7 +271,7 @@ main {
   font-size: 3rem;
   font-weight: bold;
   background: linear-gradient(to right, #ffffff, var(--primary-green));
-  -webkit-background-clip: text ; 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1231,14 +1231,6 @@ button.menu-toggle {
     border: 3px solid;
   }
 
-  /* .collaboration-cards .personal-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-  } */
-
   .collaboration-cards .personal-info {
     gap: 3em;
   }
@@ -1260,7 +1252,6 @@ button.menu-toggle {
   .form p {
     text-align: center;
     margin: 2em 0;
-
   }
 
   /* .input-groups {
