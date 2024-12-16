@@ -1114,6 +1114,7 @@ button.menu-toggle {
   .logo a i {
     font-size: 1em;
   }
+  /*   
   .btn-navigation {
     display: none;
     flex-direction: column;
@@ -1136,6 +1137,11 @@ button.menu-toggle {
     gap: 10px;
   }
 
+  .nav-links li a {
+    color: var(--secondary-green);
+    padding: 20px;
+  } 
+
   .social-links {
     margin-top: 10px;
     justify-content: center;
@@ -1147,6 +1153,62 @@ button.menu-toggle {
     margin-top: 10px;
   }
 
+  .menu-toggle {
+    display: block;
+  } */
+  /* Cacher la sidebar par défaut */
+  .btn-navigation {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222; /* Couleur de fond */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* Style des liens dans la sidebar */
+  .btn-navigation .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    margin-top: 2em;
+  }
+
+  .btn-navigation .social-links,
+  .btn-navigation .direct-buttons {
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+  }
+
+  .btn-navigation .direct-buttons {
+    flex-direction: column;
+  }
+
+  .btn-navigation.active {
+    right: 0; /* Faire apparaître la sidebar */
+  }
+
+  /* Ajustement pour le bouton toggle */
+  /* .menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+} */
   .menu-toggle {
     display: block;
   }
@@ -1228,7 +1290,6 @@ button.menu-toggle {
   .collaboration-cards {
     width: 100%;
     gap: 3em;
-    border: 3px solid;
   }
 
   .collaboration-cards .personal-info {

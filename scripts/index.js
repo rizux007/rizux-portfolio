@@ -1,4 +1,3 @@
-
 const phrases = [
   "Web developer. ",
   "Mobile developer. ",
@@ -92,10 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const displayCount = isSmallScreen() ? 1 : 2; // Affiche 1 ou 2 témoignages selon la taille de l'écran
 
     testimonials.forEach((testimonial, index) => {
-      if (
-        index >= currentIndex &&
-        index < currentIndex + displayCount
-      ) {
+      if (index >= currentIndex && index < currentIndex + displayCount) {
         testimonial.style.display = "block"; // Afficher les témoignages actifs
         testimonial.style.opacity = "1";
       } else {
@@ -113,8 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Afficher les témoignages précédents
   const prevTestimonials = () => {
-    currentIndex =
-      (currentIndex - 1 + testimonialCount) % testimonialCount; // Passer au témoignage précédent
+    currentIndex = (currentIndex - 1 + testimonialCount) % testimonialCount; // Passer au témoignage précédent
     showTestimonials();
   };
 
@@ -134,123 +129,55 @@ document.addEventListener("DOMContentLoaded", () => {
   showTestimonials();
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const testimonials = document.querySelectorAll('.testimonial');
-//   const prevBtn = document.getElementById('prev-btn');
-//   const nextBtn = document.getElementById('next-btn');
-//   let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const btnNavigation = document.querySelector('.btn-navigation');
+  const overlay = document.getElementById('overlay');
 
-//   function showTestimonial(index) {
-//     testimonials.forEach((testimonial, i) => {
-//       if (i === index) {
-//         testimonial.classList.add('active');
-//       } else {
-//         testimonial.classList.remove('active');
-//       }
-//     });
-//   }
+  // Ouvrir le sidebar
+  menuToggle.addEventListener('click', () => {
+    btnNavigation.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
 
-//   prevBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-//     showTestimonial(currentIndex);
-//   });
+  // Fermer le sidebar en cliquant sur l'overlay
+  overlay.addEventListener('click', () => {
+    btnNavigation.classList.remove('active');
+    overlay.classList.remove('active');
+  });
 
-//   nextBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex + 1) % testimonials.length;
-//     showTestimonial(currentIndex);
-//   });
-
-//   // Initialiser l'affichage
-//   showTestimonial(currentIndex);
-// });
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const container = document.querySelector(".testimonials-container");
-//   const testimonials = document.querySelectorAll(".testimonial");
-//   const prevBtn = document.querySelector("#prev-btn");
-//   const nextBtn = document.querySelector("#next-btn");
-
-//   let currentIndex = 0; // Index actuel
-//   const testimonialCount = testimonials.length;
-
-//   // Fonction pour afficher les témoignages
-//   const showTestimonials = () => {
-//     testimonials.forEach((testimonial, index) => {
-//       if (
-//         index === currentIndex ||
-//         index === (currentIndex + 1) % testimonialCount
-//       ) {
-//         testimonial.style.display = "block"; // Afficher les 2 témoignages actifs
-//         testimonial.style.opacity = "1";
-//       } else {
-//         testimonial.style.display = "none"; // Masquer les autres
-//         testimonial.style.opacity = "0";
-//       }
-//     });
-//   };
-
-//   // Afficher les témoignages suivants
-//   const nextTestimonials = () => {
-//     currentIndex = (currentIndex + 1) % testimonialCount; // Passer au témoignage suivant
-//     showTestimonials();
-//   };
-
-//   // Afficher les témoignages précédents
-//   const prevTestimonials = () => {
-//     currentIndex = (currentIndex - 1 + testimonialCount) % testimonialCount; // Passer au témoignage précédent
-//     showTestimonials();
-//   };
-
-//   // Ajouter les événements sur les boutons
-//   nextBtn.addEventListener("click", nextTestimonials);
-//   prevBtn.addEventListener("click", prevTestimonials);
-
-//   // Défilement automatique toutes les 2 secondes
-//   setInterval(() => {
-//     nextTestimonials();
-//   }, 2000);
-
-//   // Afficher les témoignages initiaux
-//   showTestimonials();
-// });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const sidebar = document.getElementById("sidebar-small");
-
-  menuToggle.addEventListener("click", () => {
-    // Alterner entre masqué et visible
-    sidebar.classList.toggle("hidden");
-    sidebar.classList.toggle("visible");
+  // Optionnel : Fermer le sidebar quand un lien est cliqué
+  const navItems = document.querySelectorAll('.btn-navigation .nav-item a');
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      btnNavigation.classList.remove('active');
+      overlay.classList.remove('active');
+    });
   });
 });
+
 // document.addEventListener("DOMContentLoaded", () => {
-//   const counters = document.querySelectorAll(".statistic-item h2");
-  
-//   counters.forEach(counter => {
-//     const target = +counter.textContent.replace("+", ""); // Récupérer la valeur cible
-//     counter.textContent = "0+"; // Initialiser à zéro
-    
-//     const updateCounter = () => {
-//       const current = +counter.textContent.replace("+", ""); // Récupérer la valeur actuelle
-//       const increment = Math.ceil(target / 100); // Diviser par 100 pour une animation fluide
+//   const menuToggle = document.getElementById("menu-toggle");
+//   const btnNavigation = document.querySelector(".btn-navigation");
 
-//       if (current < target) {
-//         counter.textContent = `${current + increment}+`; // Mettre à jour le texte
-//         setTimeout(updateCounter, 15); // Reappel rapide pour l'effet
-//       } else {
-//         counter.textContent = `${target}+`; // Fixe le nombre final
-//       }
-//     };
+//   // Gérer le clic sur le bouton menu-toggle
+//   menuToggle.addEventListener("click", () => {
+//     btnNavigation.classList.toggle("active");
+//   });
 
-//     updateCounter();
+//   // Optionnel : Fermer la sidebar si un lien est cliqué
+//   const navItems = document.querySelectorAll(".btn-navigation .nav-item a");
+//   navItems.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       btnNavigation.classList.remove("active");
+//     });
 //   });
 // });
+
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".statistic-item h2");
 
-  counters.forEach(counter => {
+  counters.forEach((counter) => {
     const target = +counter.textContent.replace("+", ""); // Récupérer la valeur cible
     counter.textContent = "0+"; // Initialiser à zéro
 
@@ -270,7 +197,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCounter();
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-btn");
