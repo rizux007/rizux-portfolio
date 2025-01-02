@@ -129,50 +129,32 @@ document.addEventListener("DOMContentLoaded", () => {
   showTestimonials();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menu-toggle');
-  const btnNavigation = document.querySelector('.btn-navigation');
-  const overlay = document.getElementById('overlay');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const btnNavigation = document.querySelector(".btn-navigation");
+  const overlay = document.getElementById("overlay");
 
   // Ouvrir le sidebar
-  menuToggle.addEventListener('click', () => {
-    btnNavigation.classList.toggle('active');
-    overlay.classList.toggle('active');
+  menuToggle.addEventListener("click", () => {
+    btnNavigation.classList.toggle("active");
+    overlay.classList.toggle("active");
   });
 
   // Fermer le sidebar en cliquant sur l'overlay
-  overlay.addEventListener('click', () => {
-    btnNavigation.classList.remove('active');
-    overlay.classList.remove('active');
+  overlay.addEventListener("click", () => {
+    btnNavigation.classList.remove("active");
+    overlay.classList.remove("active");
   });
 
   // Optionnel : Fermer le sidebar quand un lien est cliqué
-  const navItems = document.querySelectorAll('.btn-navigation .nav-item a');
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      btnNavigation.classList.remove('active');
-      overlay.classList.remove('active');
+  const navItems = document.querySelectorAll(".btn-navigation .nav-item a");
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      btnNavigation.classList.remove("active");
+      overlay.classList.remove("active");
     });
   });
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const menuToggle = document.getElementById("menu-toggle");
-//   const btnNavigation = document.querySelector(".btn-navigation");
-
-//   // Gérer le clic sur le bouton menu-toggle
-//   menuToggle.addEventListener("click", () => {
-//     btnNavigation.classList.toggle("active");
-//   });
-
-//   // Optionnel : Fermer la sidebar si un lien est cliqué
-//   const navItems = document.querySelectorAll(".btn-navigation .nav-item a");
-//   navItems.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       btnNavigation.classList.remove("active");
-//     });
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".statistic-item h2");
