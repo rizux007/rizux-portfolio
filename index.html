@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO & Open Graph Tags -->
+    <meta name="description" content="Portfolio of Eric K. AGUIGAH, a Fullstack Software Engineer specializing in modern web and mobile applications." />
+    <meta property="og:title" content="Eric K. AGUIGAH | Fullstack Software Engineer" />
+    <meta property="og:description" content="Discover my projects, skills, and services in web and mobile development." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/ecommerce.png" />
+    <meta name="theme-color" content="#00ff6a" />
     <link rel="stylesheet" href="styles/index.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!-- aos.css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- animate.css -->
@@ -20,7 +31,7 @@
   </head>
   <body >
     <header  class="header">
-      <div id="overlay" class="logo">
+      <div class="logo">
         <a href="#hero-section">
           <i class="fas fa-book"></i>
         </a>
@@ -31,37 +42,44 @@
           <i class="fas fa-bars"></i>
         </button>
 
-        <ul class="btn-navigation" >
-          <div class="nav-links">
-            <li class="nav-item"><a href="#about-me">about me</a></li>
-            <li class="nav-item"><a href="#skills">skills</a></li>
-            <li class="nav-item"><a href="#services">services</a></li>
-            <li class="nav-item"><a href="#projects">projects</a></li>
-            <!-- <li class="nav-item"><a href="#testimonials">testimonials</a></li> -->
-          </div>
+        <div class="btn-navigation" >
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#about-me" data-i18n="nav-about">about me</a></li>
+            <li class="nav-item"><a href="#skills" data-i18n="nav-skills">skills</a></li>
+            <li class="nav-item"><a href="#services" data-i18n="nav-services">services</a></li>
+            <li class="nav-item"><a href="#projects" data-i18n="nav-projects">projects</a></li>
+          </ul>
           
           <div class="social-links">
-            <a href="https://tg.linkedin.com/in/eric-k-aguigah-862108212?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"
+            <a href="https://tg.linkedin.com/in/eric-k-aguigah-862108212?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" class="magnetic"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a href="https://instagram.com" target="_blank" class="magnetic"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="https://twitter.com" target="_blank"
+            <a href="https://twitter.com" target="_blank" class="magnetic"
               ><i class="fab fa-x-twitter"></i
             ></a>
-            <a href="https://github.com/rizux007" target="_blank"
+            <a href="https://github.com/rizux007" target="_blank" class="magnetic"
               ><i class="fab fa-github"></i
             ></a>
           </div>
           <div class="direct-buttons">
-            <a href="#collaboration" class="btn btn-gradient">Hire me</a>
-            <a href="#services" class="btn btn-outline">Services</a>
+            <a href="#collaboration" class="btn btn-gradient" data-i18n="hire-me">Hire me</a>
+            <a href="#services" class="btn btn-outline" data-i18n="nav-services">Services</a>
+            <button id="theme-toggle" class="btn btn-outline theme-toggle-btn magnetic">
+              <i class="fas fa-sun"></i>
+            </button>
+            <div class="lang-switcher">
+              <button id="lang-toggle" class="btn btn-outline lang-toggle-btn magnetic" data-lang="en">
+                <span>FR</span>
+              </button>
+            </div>
           </div>
-        </ul>
+        </div>
       
       </nav>
-      <!-- <div class="overlay" id="overlay"></div> -->
+      <div class="overlay" id="overlay"></div>
     </header>
     <hr />
     <main>
@@ -69,23 +87,23 @@
     <section id="hero-section" class="hero">
       <div class="hero-info">
           <div class="hero-content">
-            <p>Hello, I'm</p>
-            <h1 class="hero-my-name">Eric K. AGUIGAH</h1>
-            <h1 class="text-fullstack">A Fullstack</h1>
+            <p data-i18n="hero-hello">Hello, I'm</p>
+            <h1 class="hero-my-name reveal-type">Eric K. AGUIGAH</h1>
+            <h1 class="text-fullstack" data-i18n="hero-fullstack">A Fullstack</h1>
             <div class="typing-container">
               <h1 id="typing-text"></h1>
             </div>
   
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero-desc">
               Passionate about building modern, scalable, and user-friendly
               applications, I specialize in both front-end and back-end
               development. Whether it's crafting seamless mobile experiences or
               robust web platforms, I'm here to turn ideas into reality.
             </p>
             <div class="hero-buttons">
-              <a href="images/CV_eric_aguigah_updated.jpg"title="Download my CV" class="btn btn-gradient" download="Eric_K_Aguigah_CV">Download CV</a>
+              <a href="images/CV_eric_aguigah_updated.jpg"title="Download my CV" class="btn btn-gradient magnetic" download="Eric_K_Aguigah_CV" data-i18n="download-cv">Download CV</a>
               <!-- <a  href="#services" class="btn btn-gradient">Learn More</a> -->
-              <a   href="#collaboration" class="btn btn-outline">Get Started</a>
+              <a   href="#collaboration" class="btn btn-outline magnetic" data-i18n="get-started">Get Started</a>
             </div>
           </div>
           <div class="hero-img">
@@ -94,16 +112,16 @@
       </div>
       <div class="hero-statistic">
           <div class="statistic-item">
-              <h2 >4+</h2>
-            <p>Years of experience</p>
+              <h2 >5+</h2>
+            <p data-i18n="years-exp">Years of experience</p>
           </div>
           <div class="statistic-item">
               <h2>10+</h2>
-            <p>Clients</p>
+            <p data-i18n="clients">Clients</p>
           </div>
           <div class="statistic-item">
               <h2>15+</h2>
-            <p>Completed Projects</p>
+            <p data-i18n="projects-done">Completed Projects</p>
           </div>
         </div>
       </div>
@@ -113,9 +131,9 @@
     <!-- about me section -->
       <section id="about-me" class="about-me">
           <div class="about-me-info" >
-              <h1 class="text-fullstack" data-aos="fade-left">About Me</h1>
+              <h1 class="text-fullstack" data-aos="fade-left" data-i18n="about-title">About Me</h1>
               <div data-aos="zoom-in-left">
-                  <p class="hero-description">I am Eric K. Aguigah, a passionate full-stack software engineer and web developer. With a diploma in application development, I have built my career in the tech industry through continuous learning and solid hands-on experience.
+                  <p class="hero-description" data-i18n="about-desc">I am Eric K. Aguigah, a passionate full-stack software engineer and web developer. With a diploma in application development, I have built my career in the tech industry through continuous learning and solid hands-on experience.
                       Whether it's creating modern web applications or developing high-performing software, I am committed to delivering solutions that combine innovation, performance, and reliability. My goal is to design products that perfectly meet clients' expectations while offering seamless and intuitive user experiences.
                       What sets me apart is my ability to combine strong technical skills with dynamic creativity to solve problems. I don't just write code; I create experiences that bring ideas to life.
                       Every project is an opportunity to push boundaries, deliver impactful solutions, and make a difference.</p>
@@ -125,37 +143,37 @@
            <div class="left">
             <div class="feature-item statistic-item"  data-aos="zoom-in-right">
               <i class="fas fa-cogs"></i>
-              <p>Crafting Scalable Web and Mobile Applications</p>
+              <p data-i18n="feat-scalable">Crafting Scalable Web and Mobile Applications</p>
             </div>
             <div class="feature-item statistic-item"  data-aos="zoom-in-right">
               <i class="fas fa-chart-line"></i>
-              <p>User-Centric Design and Development</p>
+              <p data-i18n="feat-usercentric">User-Centric Design and Development</p>
             </div>
             <div class="feature-item statistic-item"  data-aos="zoom-in-right">
               <i class="fas fa-headset"></i>
-              <p>Full-Stack Proficiency Across Modern Frameworks</p>
+              <p data-i18n="feat-fullstack">Full-Stack Proficiency Across Modern Frameworks</p>
             </div>
             <div class="feature-item statistic-item"  data-aos="zoom-in-right">
               <i class="fas fa-lightbulb"></i>
-              <p>Agile and Responsive Development Practices</p>
+              <p data-i18n="feat-agile">Agile and Responsive Development Practices</p>
             </div>
            </div>
             <div class="right">
               <div class="feature-item statistic-item"  data-aos="zoom-in-right">
                 <i class="fas fa-code"></i>
-                <p >Secure and Optimized Code Solutions</p>
+                <p data-i18n="feat-secure">Secure and Optimized Code Solutions</p>
               </div>
               <div class="feature-item statistic-item"  data-aos="zoom-in-right">
                 <i class="fas fa-shield-alt"></i>
-                <p>Seamless Frontend and Backend Integration</p>
+                <p data-i18n="feat-integration">Seamless Frontend and Backend Integration</p>
               </div>
               <div class="feature-item statistic-item"  data-aos="zoom-in-right">
                 <i class="fas fa-graduation-cap"></i>
-                <p>Staying Ahead with Emerging Technologies</p>
+                <p data-i18n="feat-learning">Staying Ahead with Emerging Technologies</p>
               </div>
               <div class="feature-item statistic-item"  data-aos="zoom-in-right">
                 <i class="fas fa-users"></i>
-                <p>Collaborative Project Execution for Maximum Impact</p>
+                <p data-i18n="feat-collaboration">Collaborative Project Execution for Maximum Impact</p>
               </div>
             </div>
           </div>
@@ -165,7 +183,7 @@
       <!-- section My skills -->
       <section id="skills"  class="my-skills">
       <div class="skills-details">
-      <h1 class="text-fullstack"  data-aos="fade-left">My Skills</h1>
+      <h1 class="text-fullstack"  data-aos="fade-left" data-i18n="skills-title">My Skills</h1>
 
       <div class="skills-container">
 
@@ -175,74 +193,74 @@
 
       <div class="skills-category" data-aos="fade-up"
       data-aos-anchor-placement="center-bottom">
-        <h2 class="category-title">Frontend Development</h2>
+        <h2 class="category-title" data-i18n="cat-frontend">Frontend Development</h2>
         <div class="skills-list">
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
       <div class="skill-data">
         <p>HTML</p>
-        <span>Experienced</span>
+        <span data-i18n="level-experienced">Experienced</span>
       </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>CSS</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>JavaScript</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>TypeScript</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Material UI</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Tailwind</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>React.js</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Next.js</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
         </div>
       </div>
       <div class="skills-category" data-aos="fade-up-right">
-        <h2 class="category-title">App Development</h2>
+        <h2 class="category-title" data-i18n="cat-apps">App Development</h2>
         <div class="skills-list">
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Flutter</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
             </div>
           </div>
           <!-- <div class="skill-item">
@@ -263,7 +281,7 @@
             <i class="fas fa-check-circle"></i>
         <div class="skill-data">
           <p>Android (Dart)</p>
-          <span>Experienced</span>
+          <span data-i18n="level-experienced">Experienced</span>
         </div>
           </div>
         </div>
@@ -271,27 +289,27 @@
 
 
       <div class="skills-category"data-aos="fade-up-left" >
-        <h2 class="category-title">Backend Development</h2>
+        <h2 class="category-title" data-i18n="cat-backend">Backend Development</h2>
         <div class="skills-list">
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Nest.Js</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Node.js</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Express.js</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
         
@@ -313,47 +331,47 @@
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>SQL</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>MySQL</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>PostgreSQL</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
             </div>
           </div>
         </div>
       </div>  
       <div class="skills-category"data-aos="fade-up-left" >
-        <h2 class="category-title">API Development</h2>
+        <h2 class="category-title" data-i18n="cat-api">API Development</h2>
         <div class="skills-list">
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>RESTful APIs</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>GraphQL</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
             </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Swagger</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
           </div>
           </div>
         
@@ -361,48 +379,41 @@
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>API Security</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Postman</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
           </div>
           </div>
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Thunder Client</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
           </div>
           </div>
           
         </div>
       </div>  
       <div class="skills-category"data-aos="fade-up-left" >
-        <h2 class="category-title">UX/UI</h2>
+        <h2 class="category-title" data-i18n="cat-uiux">UX/UI</h2>
         <div class="skills-list">
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
             <div class="skill-data">
               <p>Figma</p>
-            <span>Experienced</span>
+            <span data-i18n="level-experienced">Experienced</span>
             </div>
           </div>
-          <!-- <div class="skill-item">
-            <i class="fas fa-check-circle"></i>
-            <div class="skill-data">
-              <p>Sketch</p>
-            <span>Intermediate</span>
-            </div>
-          </div> -->
           <div class="skill-item">
             <i class="fas fa-check-circle"></i>
           <div class="skill-data">
             <p>Adobe XD</p>
-            <span>Intermediate</span>
+            <span data-i18n="level-intermediate">Intermediate</span>
           </div>
           </div>
 
@@ -413,75 +424,75 @@
 
       <!-- section Services -->
       <section id="services" class="services-section">
-        <h1 class="text-fullstack" data-aos="fade-left">Services</h1>
-        <p class="section-description">
+        <h1 class="text-fullstack" data-aos="fade-left" data-i18n="services-title">Services</h1>
+        <p class="section-description" data-i18n="services-desc">
           I turn your ideas and desires into a unique project that inspires you and engages your customers.
         </p>
         <div class="services-container">
           <div data-aos="flip-left" class="service-card">
             <i class="service-icon fa fa-mobile-alt"></i>
-            <h3 class="service-title">Mobile App Development</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-mobile-title">Mobile App Development</h3>
+            <p class="service-description" data-i18n="serv-mobile-desc">
               I develop cross platform mobile applications that provide seamless user experiences across different devices. Leveraging versatile development frameworks, I craft high-performance applications for iOS and Android platforms.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
           <div data-aos="flip-up" class="service-card">
             <i class="service-icon fa fa-laptop-code"></i>
-            <h3 class="service-title">Web Development</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-web-title">Web Development</h3>
+            <p class="service-description" data-i18n="serv-web-desc">
               From responsive websites to complex web applications, I deliver robust solutions using cutting-edge technologies. My expertise ensures optimal performance and scalability.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
           <div data-aos="flip-right" class="service-card">
             <i class="service-icon fa fa-paint-brush"></i> 
-            <h3 class="service-title">UI/UX Design</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-design-title">UI/UX Design</h3>
+            <p class="service-description" data-i18n="serv-design-desc">
               I design intuitive and visually appealing user interfaces that elevate the user experience. By blending aesthetics with functionality, I create digital products that not only look stunning but also deliver seamless and engaging interactions for your users.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
           <div data-aos="flip-left" class="service-card">
             <i class="service-icon fa fa-pen"></i>
-            <h3 class="service-title">Content Creation</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-content-title">Content Creation</h3>
+            <p class="service-description" data-i18n="serv-content-desc">
               I create captivating digital content that resonates with your audience and reinforces your brand identity. From blog posts and social media content to technical documentation, I deliver messages that are clear, concise, and impactful.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
           <div data-aos="flip-up" class="service-card">
             <i class="service-icon fa fa-database"></i>
-            <h3 class="service-title">Database Design & Management</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-db-title">Database Design & Management</h3>
+            <p class="service-description" data-i18n="serv-db-desc">
               I develop efficient and scalable database solutions customized to your unique requirements. From data modeling to query optimization, I ensure your data is structured for high performance and effortless maintenance.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
           <div data-aos="flip-right" class="service-card">
             <i class="service-icon fa fa-exchange-alt"></i>
-            <h3 class="service-title">API Development</h3>
-            <p class="service-description">
+            <h3 class="service-title" data-i18n="serv-api-title">API Development</h3>
+            <p class="service-description" data-i18n="serv-api-desc">
               I develop robust, well-documented APIs that enable seamless communication between software systems. Whether RESTful or GraphQL, my APIs are crafted for efficiency, scalability, and effortless integration.
             </p>
             <div class="service-actions">
               <!-- <button class="btn">Read More</button> -->
-              <button class="btn">Get started</button>
+              <button class="btn magnetic" data-i18n="get-started">Get started</button>
             </div>
           </div>
         </div>
@@ -489,79 +500,60 @@
 
       <!-- section projects -->
       <section id="projects" class="projects-section">
-        <h1 class="text-fullstack" data-aos="fade-left">Projects</h1>
-        <!-- <div class="projects-header">
-          <div class="filters">
-            <button class="filter-btn active" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">All</button>
-            <button class="filter-btn" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">Web</button>
-            <button class="filter-btn" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">UI/UX</button>
-            <button class="filter-btn" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">Apps</button>
-          </div>
-        </div> -->
+        <h1 class="text-fullstack" data-aos="fade-left" data-i18n="projects-title">Projects</h1>
+      
         <div class="projects-container">
-          <div class="project-card web" data-aos="fade-up"
-          data-aos="flip-down">
+          <article class="project-card web" data-aos="fade-up" data-aos="flip-down">
             <div class="project-info">
-              <h2>Sale & Stock Management</h2>
-              <p class="description">Management of your daily sales and stocks  with a good statitics...</p>
+              <h2 data-i18n="proj-1-title">Sale & Stock Management</h2>
+              <p class="description" data-i18n="proj-1-desc">Management of your daily sales and stocks  with a good statitics...</p>
               <div class="stack">
                 <span>React.js</span>
                 <span>Typescript</span>
                 <span>Material UI</span>
                 <span>CSS</span>
-                <span>Redux/Redux Toolkit</span>
+                <span>Redux</span>
                 <span>API</span>
               </div>
               <div class="actions">
-                <button onclick="window.open('http://localhost:3039/', '_blank');" class="demo-btn">Demo</button>
-                <!-- <button class="share-btn"> <i class="fa-sharp-duotone fa-solid fa-share-nodes"></i></button> -->
+                <button onclick="window.open('http://localhost:3039/', '_blank');" class="demo-btn magnetic" data-i18n="demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-image">
-              <img src="images/vente.png" alt="Project Image">
+              <img src="images/vente.png" alt="Sale & Stock Management Dashboard">
             </div>
-          </div>
-          <div class="project-card web" data-aos="fade-up"
-          data-aos="flip-down">
+          </article>
+          <article class="project-card web" data-aos="fade-up" data-aos="flip-down">
             <div class="project-info">
-              <h2>E-Commerce Website</h2>
-              <p class="description">Elevate your online shopping experience with our state-of-the-art E-Commerce Application...</p>
+              <h2 data-i18n="proj-2-title">E-Commerce Website</h2>
+              <p class="description" data-i18n="proj-2-desc">Elevate your online shopping experience with our state-of-the-art E-Commerce Application...</p>
               <div class="stack">
                 <span>React.js</span>
                 <span>Typescript</span>
                 <span>CSS</span>
                 <span>Styled Component</span>
-                <span>Online API</span>
+                <span>API</span>
               </div>
               <div class="actions">
-                <button onclick="window.open('https://rizux007.github.io/comfy_sloth_react_typescript', '_blank');" class="demo-btn">Demo</button>
-                <!-- <button class="share-btn"> <i class="fa-sharp-duotone fa-solid fa-share-nodes"></i></button> -->
+                <button onclick="window.open('https://rizux007.github.io/comfy_sloth_react_typescript', '_blank');" class="demo-btn magnetic" data-i18n="demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-image">
-              <img src="images/ecommerce.png" alt="Project Image">
+              <img src="images/ecommerce.png" alt="E-Commerce Website Interface">
             </div>
-          </div>
+          </article>
           <div class="project-card web" data-aos="fade-up"
           data-aos-anchor-placement="top-center">
             <div class="project-info">
-              <h2>Visit Website Terre de Sagesse</h2>
-              <p class="description">A static website for an immersion trip with the Huni Kui and Puyanawa tribes....</p>
+              <h2 data-i18n="proj-3-title">Visit Website Terre de Sagesse</h2>
+              <p class="description" data-i18n="proj-3-desc">A static website for an immersion trip with the Huni Kui and Puyanawa tribes....</p>
               <div class="stack">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
               </div>
               <div class="actions">
-                <button onclick="window.open('https://rizux007.github.io/terre-de-sagesses/', '_blank');" class="demo-btn">Demo</button>
+                <button onclick="window.open('https://rizux007.github.io/terre-de-sagesses/', '_blank');" class="demo-btn magnetic" data-i18n="demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-image">
@@ -571,8 +563,8 @@
           <div class="project-card web" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>Lethal dog crossbreeding</h2>
-              <p class="description">A website highlighting the risks and ethical issues of lethal dog crossbreeding, promoting responsible practices for healthier breeds.....</p>
+              <h2 data-i18n="proj-4-title">Lethal dog crossbreeding</h2>
+              <p class="description" data-i18n="proj-4-desc">A website highlighting the risks and ethical issues of lethal dog crossbreeding, promoting responsible practices for healthier breeds.....</p>
               <div class="stack">
                 <span>React.js</span>
                 <span>CSS</span>
@@ -590,8 +582,8 @@
           <div class="project-card apps" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>Todo's App</h2>
-              <p class="description">I build sleek and efficient Flutter applications designed to streamline task management. From intuitive interfaces to seamless functionality, my To-Do apps prioritize user experience, performance, and ease of use across all devices.....</p>
+              <h2 data-i18n="proj-5-title">Todo's App</h2>
+              <p class="description" data-i18n="proj-5-desc">I build sleek and efficient Flutter applications designed to streamline task management. From intuitive interfaces to seamless functionality, my To-Do apps prioritize user experience, performance, and ease of use across all devices.....</p>
               <div class="stack">
                 <span>Flutter</span>
                 <span>Dart</span>
@@ -607,8 +599,8 @@
           <div class="project-card" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>Delivery App</h2>
-              <p class="description">A delivery app offering fast, reliable, and convenient service to bring your orders directly to your doorstep with theme personalisation ....</p>
+              <h2 data-i18n="proj-6-title">Delivery App</h2>
+              <p class="description" data-i18n="proj-6-desc">A delivery app offering fast, reliable, and convenient service to bring your orders directly to your doorstep with theme personalisation ....</p>
               <div class="stack">
                 <span>Flutter</span>
                 <span>Dart</span>
@@ -624,8 +616,8 @@
           <div class="project-card web" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>RicStore API</h2>
-              <p class="description">A backend application for efficient sales and inventory management, providing real-time tracking and streamlined operations....</p>
+              <h2 data-i18n="proj-7-title">RicStore API</h2>
+              <p class="description" data-i18n="proj-7-desc">A backend application for efficient sales and inventory management, providing real-time tracking and streamlined operations....</p>
               <div class="stack">
                 <span>Nest.js</span>
                 <span>TypeScript</span>
@@ -643,8 +635,8 @@
           <div class="project-card web" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>RizuxApp</h2>
-              <p class="description">RizuxApp is a real-time online discussion platform enabling seamless communication and interaction....</p>
+              <h2 data-i18n="proj-8-title">RizuxApp</h2>
+              <p class="description" data-i18n="proj-8-desc">RizuxApp is a real-time online discussion platform enabling seamless communication and interaction....</p>
               <div class="stack">
                 <span>PHP</span>
                 <span>CSS</span>
@@ -661,8 +653,8 @@
           <div class="project-card web" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>Rizux Palace</h2>
-              <p class="description">Rizux Palace is a PHP-based website for booking event venues....</p>
+              <h2 data-i18n="proj-9-title">Rizux Palace</h2>
+              <p class="description" data-i18n="proj-9-desc">Rizux Palace is a PHP-based website for booking event venues....</p>
               <div class="stack">
                 <span>PHP</span>
                 <span>CSS</span>
@@ -679,8 +671,8 @@
           <div class="project-card web" data-aos="fade-up"
           data-aos="flip-down">
             <div class="project-info">
-              <h2>Leave Management</h2>
-              <p class="description">A leave management system for companies....</p>
+              <h2 data-i18n="proj-10-title">Leave Management</h2>
+              <p class="description" data-i18n="proj-10-desc">A leave management system for companies....</p>
               <div class="stack">
                 <span>PHP</span>
                 <span>CSS</span>
@@ -697,85 +689,6 @@
         </div>
       </section>
 
-      
-      <!-- section testimonials -->
-      <!-- <section id="testimonials">
-        <div class="testimonials-header">
-          <h2 class="text-fullstack" data-aos="fade-left">Testimonials</h2>
-          <p>Feedback from my clients.</p>
-        </div>
-        <div class="testimonials-container">
-          <div class="testimonial">
-            <img src="images/portrait-woman-soccer-player.jpg" alt="Emily Rodriguez">
-            <h3>Emily Rodriguez</h3>
-            <p class="position">COO of MobileFirst Inc.</p>
-            <p class="feedback">
-              We hired Rizux to develop a mobile app for our business, and the results exceeded our expectations. His
-              proficiency in Flutter delivered a smooth, responsive app that our users love. Moreover, his proactive approach
-              to security gave us confidence in the integrity of our product.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-          <div class="testimonial">
-            <img src="images/portrait-man-smiling-city.jpg" alt="David Nwosu">
-            <h3>David MELCKLIN</h3>
-            <p class="position">IT Director at AfriBank</p>
-            <p class="feedback">
-             Eric Aguigah's technical skills are matched only by his excellent communication and project management abilities.
-              He took the time to understand our business needs and delivered a solution that exceeded our requirements. His
-              data security expertise was an added bonus that ensured our peace of mind.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-
-          <div class="testimonial">
-            <img src="images/black-girl.png" alt="Jessica Taylor">
-            <h3>Jessica Taylor</h3>
-            <p class="position">Founder of StartUpEase</p>
-            <p class="feedback">
-              Eric Aguigah transformed our website into a fast, visually stunning, and user-friendly platform. His attention to detail and modern design principles have given our startup the edge we needed in a competitive market.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-          
-          <div class="testimonial">
-            <img src="images/badb.png" alt="Michael Johnson">
-            <h3>Michael Johnson</h3>
-            <p class="position">Product Manager at InnovateNow</p>
-            <p class="feedback">
-              Working with Eric Aguigah on our mobile app was an absolute pleasure. His proficiency in React Native and backend systems ensured seamless performance and scalability, even during peak user traffic.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-          
-          <div class="testimonial">
-            <img src="images/medium-shot-beautiful-woman-with-braids.jpg" alt="Linda Zhang">
-            <h3>Linda Zhang</h3>
-            <p class="position">CTO at CodeFuture</p>
-            <p class="feedback">
-              Eric Aguigah delivered a web application that exceeded our expectations. The functionality, security features, and responsiveness were spot on, allowing our team to focus on scaling our business.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-          
-          <div class="testimonial">
-            <img src="images/small-hope.png" alt="Robert Martinez">
-            <h3>Robert Martinez</h3>
-            <p class="position">Marketing Director at BrightPath</p>
-            <p class="feedback">
-              The website Eric Aguigah developed has elevated our brand image to new heights. His ability to blend creativity with technical expertise ensured a product that attracts and retains customers.
-            </p>
-            <div class="stars">★★★★★</div>
-          </div>
-          
-         
-
-        </div>
-        <div class="testimonial-controls">
-          <button id="prev-btn">←</button>
-          <button id="next-btn">→</button>
-        </div>
-      </section> -->
 
       <!-- section collaboration -->
       <section  id="collaboration" class="collaboration-section">
@@ -783,17 +696,18 @@
           <div class="personal-info">
             <div class="email-info common">
               <i class="fas fa-envelope"></i>
-              <p>email</p>
+              <p data-i18n="info-email-label">email</p>
               <p>eriksheney@gmail.com</p>
+              <p>ericaguigahpro@gmail.com</p>
             </div>
             <div class="number-info common">
               <i class="fas fa-phone"></i>
-              <p>phone number</p>
+              <p data-i18n="info-phone-label">phone number</p>
               <p>(+228) 96634345</p>
             </div>
             <div class="address-info common">
               <i class="fas fa-map-marker-alt"></i>
-              <p>address</p>
+              <p data-i18n="info-address-label">address</p>
               <p>Lomé, TOGO</p>
             </div>
           </div>
@@ -801,24 +715,24 @@
         <div class="send-message">
           <form action="https://formspree.io/f/xjkvddye"
           method="POST" class="form">
-           <h2 class="text-fullstack">Let's Collaborate!</h2>
-           <p>Always open to new opportunities and collaborations, I invite you to connect with me for any inquiries or project discussions.</p>
+           <h2 class="text-fullstack" data-i18n="collab-title">Let's Collaborate!</h2>
+           <p data-i18n="collab-desc">Always open to new opportunities and collaborations, I invite you to connect with me for any inquiries or project discussions.</p>
            <div class="input-groups">
             <div class="text-field">
              <div class="fullname">
-              <input required name="firstname" type="text" placeholder="First name">
-              <input required name="lastname" type="text" placeholder="Last name">
+              <input required name="firstname" type="text" placeholder="First name" data-i18n="form-firstname">
+              <input required name="lastname" type="text" placeholder="Last name" data-i18n="form-lastname">
             </div>
             <div class="contact">
-              <input required type="text" name="email" placeholder="Email">
-              <input required type="text" name="phone" placeholder="Phone number">
+              <input required type="text" name="email" placeholder="Email" data-i18n="form-email">
+              <input required type="text" name="phone" placeholder="Phone number" data-i18n="form-phone">
             </div>
             </div>
             <div class="textarea-field">
-              <textarea required name="message" placeholder="Your Message"></textarea>
+              <textarea required name="message" placeholder="Your Message" data-i18n="form-message"></textarea>
             </div>
            </div>
-           <button type="submit" class="btn btn-gradient">Send Now</button>
+           <button type="submit" class="btn btn-gradient magnetic" data-i18n="form-send">Send Now</button>
           </form>
         </div>
       </section>
@@ -841,15 +755,21 @@
         ></a>
       </div>
       
-      <h5>Built with love by  AGUIGAH Eric A.K.A rizux</h5>
-      <p>&copy; <span id="current-year">2024</span> Rizux entertainment All rights reserved.</p>
+      <h5 data-i18n="footer-built">Built with love ❤️ by  AGUIGAH K. Eric A.K.A rizux</h5>
+      <p>&copy; <span id="current-year">2026</span> Rizux entertainment <span data-i18n="rights">All rights reserved.</span></p>
     </div>
   </footer>
-    <script src="scripts/index.js"></script>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
-    
+    <script src="scripts/index.js"></script>
   </body>
 </html>

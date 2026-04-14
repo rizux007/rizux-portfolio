@@ -1,0 +1,52 @@
+const translations = {
+  en: {
+    "nav-about": "About Me",
+    "nav-skills": "Skills",
+    "nav-services": "Services",
+    "nav-projects": "Projects",
+    "hire-me": "Hire Me",
+    "hero-hello": "Hello, I'm",
+    "hero-fullstack": "A Fullstack",
+    "hero-desc": "Passionate about building modern, scalable, and user-friendly applications, I specialize in both front-end and back-end development. Whether it's crafting seamless mobile experiences or robust web platforms, I'm here to turn ideas into reality.",
+    "download-cv": "Download CV",
+    "get-started": "Get Started",
+    "years-exp": "Years of experience",
+    "clients": "Clients",
+    "projects-done": "Completed Projects",
+    "about-title": "About Me",
+    "about-desc": "I am Eric K. Aguigah, a passionate full-stack software engineer and web developer. With a diploma in application development, I have built my career in the tech industry through continuous learning and solid hands-on experience. Whether it's creating modern web applications or developing high-performing software, I am committed to delivering solutions that combine innovation, performance, and reliability. My goal is to design products that perfectly meet clients' expectations while offering seamless and intuitive user experiences. What sets me apart is my ability to combine strong technical skills with dynamic creativity to solve problems. I don't just write code; I create experiences that bring ideas to life. Every project is an opportunity to push boundaries, deliver impactful solutions, and make a difference.",
+    "skills-title": "My Skills",
+    "services-title": "Services",
+    "services-desc": "I turn your ideas and desires into a unique project that inspires you and engages your customers.",
+    "projects-title": "Projects",
+    "contact-title": "Collaboration",
+    "footer-built": "Built with love ❤️ by AGUIGAH K. Eric",
+    "rights": "All rights reserved."
+  },
+  fr: {
+    "nav-about": "À Propos",
+    "nav-skills": "Compétences",
+    "nav-services": "Services",
+    "nav-projects": "Projets",
+    "hire-me": "Engagez-moi",
+    "hero-hello": "Bonjour, je suis",
+    "hero-fullstack": "Un Ingénieur",
+    "hero-desc": "Passionné par la création d'applications modernes, évolutives et conviviales, je me spécialise dans le développement front-end et back-end. Qu'il s'agisse de concevoir des expériences mobiles fluides ou des plateformes web robustes, je suis là pour transformer vos idées en réalité.",
+    "download-cv": "Télécharger CV",
+    "get-started": "Commencer",
+    "years-exp": "Années d'expérience",
+    "clients": "Clients",
+    "projects-done": "Projets Terminés",
+    "about-title": "À Propos de Moi",
+    "about-desc": "Je suis Eric K. Aguigah, ingénieur logiciel full-stack et développeur web passionné. Diplômé en développement d'applications, j'ai bâti ma carrière dans l'industrie technologique grâce à un apprentissage continu et une solide expérience pratique. Qu'il s'agisse de créer des applications web modernes ou de développer des logiciels performants, je m'engage à fournir des solutions alliant innovation, performance et fiabilité. Mon objectif est de concevoir des produits qui répondent parfaitement aux attentes des clients tout en offrant des expériences utilisateur fluides et intuitives. Ce qui me distingue est ma capacité à combiner de solides compétences techniques avec une créativité dynamique pour résoudre les problèmes. Je ne me contente pas d'écrire du code ; je crée des expériences qui donnent vie aux idées. Chaque projet est une opportunité de repousser les limites, de fournir des solutions percutantes et de faire la différence.",
+    "skills-title": "Mes Compétences",
+    "services-title": "Services",
+    "services-desc": "Je transforme vos idées et désirs en un projet unique qui vous inspire et engage vos clients.",
+    "projects-title": "Projets",
+    "contact-title": "Collaboration",
+    "footer-built": "Fait avec amour ❤️ par AGUIGAH K. Eric",
+    "rights": "Tous droits réservés."
+  }
+};
+
+export default translations;
