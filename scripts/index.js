@@ -31,6 +31,14 @@ const translations = {
     "serv-api-title": "API Development",
     "serv-api-desc": "I develop robust, well-documented APIs that enable seamless communication between software systems. Whether RESTful or GraphQL, my APIs are crafted for efficiency, scalability, and effortless integration.",
     "projects-title": "Projects",
+    "proj-nexaflow-title": "NexaFlow - Complete E-Commerce, POS & Sales Management",
+    "proj-nexaflow-desc": "A robust, 100% configurable enterprise solution for E-commerce and POS. Features include advanced inventory management, integrated payment gateways, dynamic promotion engines, customer loyalty programs, and real-time sales analytics.",
+    "proj-hr-title": "PayrollPro - Enterprise HR & Payroll System",
+    "proj-hr-desc": "A comprehensive human resources and payroll management platform. Handles automated salary calculations, employee performance tracking, leave management, digital document storage, and complex tax compliance workflows.",
+    "proj-fintrack-title": "FinTrack - AI-Powered Personal Finance & Budgeting",
+    "proj-fintrack-desc": "A smart financial ecosystem featuring real-time analytics, AI-driven spending optimization, and savings goal tracking. Supports multi-currency (XOF, EUR, USD, GBP) with auto-conversion and a PWA for offline mobile access. Fully configurable with intelligent budget alerts.",
+    "proj-archive-title": "ArchiveHub - Intelligent Document Management & OCR",
+    "proj-archive-desc": "A heavy-duty digital archiving system featuring integrated OCR (Optical Character Recognition) for automatic text extraction. Includes advanced full-text search (Elasticsearch), document versioning, and enterprise-grade security permissions and audit trail.",
     "filter-all": "All",
     "filter-web": "Web",
     "filter-uiux": "UI/UX",
@@ -75,6 +83,7 @@ const translations = {
     "cat-uiux": "UX/UI",
     "level-experienced": "Experienced",
     "level-intermediate": "Intermediate",
+    "level-beginner": "Beginner",
     "feat-scalable": "Crafting Scalable Web and Mobile Applications",
     "feat-usercentric": "User-Centric Design and Development",
     "feat-fullstack": "Full-Stack Proficiency Across Modern Frameworks",
@@ -83,6 +92,14 @@ const translations = {
     "feat-integration": "Seamless Frontend and Backend Integration",
     "feat-learning": "Staying Ahead with Emerging Technologies",
     "feat-collaboration": "Collaborative Project Execution for Maximum Impact",
+    "cat-devops": "DevOps & Deployment",
+    "skill-angular": "Angular",
+    "skill-primeng": "PrimeNG",
+    "skill-java": "Java",
+    "skill-springboot": "Spring Boot",
+    "skill-mssql": "MS SQL Server",
+    "skill-photoshop": "Photoshop",
+    "skill-illustrator": "Adobe Illustrator",
     "footer-built": "Built with love ❤️ by AGUIGAH K. Eric A.K.A rizux",
     "rights": "All rights reserved.",
     "phrases": [
@@ -127,6 +144,14 @@ const translations = {
     "serv-api-title": "Développement d'API",
     "serv-api-desc": "Je développe des API robustes et bien documentées qui permettent une communication fluide entre les systèmes logiciels. Qu'elles soient RESTful ou GraphQL, mes API sont conçues pour l'efficacité, l'évolutivité et une intégration sans effort.",
     "projects-title": "Projets",
+    "proj-nexaflow-title": "NexaFlow - Gestion E-Commerce, POS & Ventes Complète",
+    "proj-nexaflow-desc": "Une solution d'entreprise robuste et 100% configurable pour l'E-commerce et le POS. Inclut la gestion avancée des stocks, des passerelles de paiement intégrées, des systèmes de promotions dynamiques, des programmes de fidélité client, et des analyses de ventes en temps réel.",
+    "proj-hr-title": "PayrollPro - Système de Gestion RH & Paie",
+    "proj-hr-desc": "Une plateforme complète de gestion des ressources humaines et de la paie. Gère les calculs automatisés des salaires, le suivi des performances, la gestion des congés et les flux de conformité fiscale complexes.",
+    "proj-fintrack-title": "FinTrack - Gestion Financière & Budget par IA",
+    "proj-fintrack-desc": "Un écosystème financier intelligent avec tableaux de bord temps réel, conseiller IA pour optimiser les dépenses et suivi d'objectifs d'épargne. Supporte le multi-devises (XOF, EUR, USD, GBP), la conversion automatique et une version PWA pour un accès mobile hors-ligne.",
+    "proj-archive-title": "ArchiveHub - Gestion des Archives, Document & OCR",
+    "proj-archive-desc": "Un système d'archivage numérique robuste incluant l'OCR pour l'extraction automatique de texte. Offre une recherche plein texte ultra-rapide (Elasticsearch), le versionnage de documents et une gestion hautement sécurisée des accès et une piste audit.",
     "filter-all": "Tous",
     "filter-web": "Web",
     "filter-uiux": "UI/UX",
@@ -171,6 +196,7 @@ const translations = {
     "cat-uiux": "Design UX/UI",
     "level-experienced": "Expérimenté",
     "level-intermediate": "Intermédiaire",
+    "level-beginner": "Débutant",
     "feat-scalable": "Conception d'Applications Web et Mobiles Évolutives",
     "feat-usercentric": "Design et Développement Centrés sur l'Utilisateur",
     "feat-fullstack": "Maîtrise Full-Stack sur les Frameworks Modernes",
@@ -179,6 +205,14 @@ const translations = {
     "feat-integration": "Intégration Fluide du Frontend et du Backend",
     "feat-learning": "À l'Avant-garde des Technologies Émergentes",
     "feat-collaboration": "Exécution de Projets Collaboratifs pour un Impact Maximum",
+    "cat-devops": "DevOps & Déploiement",
+    "skill-angular": "Angular",
+    "skill-primeng": "PrimeNG",
+    "skill-java": "Java",
+    "skill-springboot": "Spring Boot",
+    "skill-mssql": "MS SQL Server",
+    "skill-photoshop": "Photoshop",
+    "skill-illustrator": "Adobe Illustrator",
     "footer-built": "Fait avec amour ❤️ par AGUIGAH K. Eric A.K.A rizux",
     "rights": "Tous droits réservés.",
     "phrases": [
@@ -584,6 +618,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.1 });
     
     observer.observe(el);
+  });
+
+  // Project Image Dynamic Zoom
+  const projectImages = document.querySelectorAll(".project-image");
+  projectImages.forEach((wrapper) => {
+    const img = wrapper.querySelector("img");
+    
+    wrapper.addEventListener("mousemove", (e) => {
+      const rect = wrapper.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      
+      img.style.transformOrigin = `${x}% ${y}%`;
+    });
+    
+    wrapper.addEventListener("mouseleave", () => {
+      img.style.transformOrigin = "center center";
+    });
   });
 });
 
