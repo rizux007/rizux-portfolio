@@ -86,13 +86,13 @@ const translations = {
     "footer-built": "Built with love ❤️ by AGUIGAH K. Eric A.K.A rizux",
     "rights": "All rights reserved.",
     "phrases": [
-      "Software Engineer.",
-      "Web Developer.",
-      "Mobile Developer.",
+      "Software Engineer. ",
+      "Web Developer. ",
+      "Mobile Developer. ",
       "UI/UX Designer.",
-      "Creative Problem Solver.",
-      "Tech Enthusiast.",
-      "Full-Stack Architect."
+      "Creative Problem Solver. ",
+      "Tech Enthusiast. ",
+      "Full-Stack Architect. "
     ]
   },
   fr: {
@@ -182,13 +182,13 @@ const translations = {
     "footer-built": "Fait avec amour ❤️ par AGUIGAH K. Eric A.K.A rizux",
     "rights": "Tous droits réservés.",
     "phrases": [
-      "Ingénieur Logiciel.",
-      "Développeur Web.",
-      "Développeur Mobile.",
+      "Ingénieur Logiciel. ",
+      "Développeur Web. ",
+      "Développeur Mobile. ",
       "Designer UI/UX.",
-      "Solutionneur Créatif.",
-      "Passionné de Tech.",
-      "Architecte Full-Stack."
+      "Solutionneur Créatif. ",
+      "Passionné de Tech. ",
+      "Architecte Full-Stack. "
     ]
   }
 };
