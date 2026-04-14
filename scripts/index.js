@@ -31,14 +31,16 @@ const translations = {
     "serv-api-title": "API Development",
     "serv-api-desc": "I develop robust, well-documented APIs that enable seamless communication between software systems. Whether RESTful or GraphQL, my APIs are crafted for efficiency, scalability, and effortless integration.",
     "projects-title": "Projects",
-    "proj-nexaflow-title": "NexaFlow - Complete E-Commerce, POS & Sales Management",
-    "proj-nexaflow-desc": "A robust, 100% configurable enterprise solution for E-commerce and POS. Features include advanced inventory management, integrated payment gateways, dynamic promotion engines, customer loyalty programs, and real-time sales analytics.",
+    "proj-nexaflow-title": "NexaFlow - E-Commerce, POS, Sales & Inventory Management",
+    "proj-nexaflow-desc": "A professional-grade, 100% configurable enterprise solution combining E-commerce, Point of Sale, and advanced Inventory management. Featuring real-time stock tracking, integrated payment gateways, dynamic promos, and sales analytics.",
     "proj-hr-title": "PayrollPro - Enterprise HR & Payroll System",
     "proj-hr-desc": "A comprehensive human resources and payroll management platform. Handles automated salary calculations, employee performance tracking, leave management, digital document storage, and complex tax compliance workflows.",
     "proj-fintrack-title": "FinTrack - AI-Powered Personal Finance & Budgeting",
     "proj-fintrack-desc": "A smart financial ecosystem featuring real-time analytics, AI-driven spending optimization, and savings goal tracking. Supports multi-currency (XOF, EUR, USD, GBP) with auto-conversion and a PWA for offline mobile access. Fully configurable with intelligent budget alerts.",
     "proj-archive-title": "ArchiveHub - Intelligent Document Management & OCR",
     "proj-archive-desc": "A heavy-duty digital archiving system featuring integrated OCR (Optical Character Recognition) for automatic text extraction. Includes advanced full-text search (Elasticsearch), document versioning, and enterprise-grade security permissions and audit trail.",
+    "proj-medagenda-title": "MedAgenda - Comprehensive Medical & Healthcare Management",
+    "proj-medagenda-desc": "An all-in-one Hospital Information System (HIS) designed for scalability. Centralizes patient management, smart scheduling, billing, pharmacy inventory, and laboratory workflows with a granular multi-role permission architecture.",
     "filter-all": "All",
     "filter-web": "Web",
     "filter-uiux": "UI/UX",
@@ -102,6 +104,7 @@ const translations = {
     "skill-illustrator": "Adobe Illustrator",
     "footer-built": "Built with love ❤️ by AGUIGAH K. Eric A.K.A rizux",
     "rights": "All rights reserved.",
+    "proj-coming-soon": "Under Development / Coming Soon",
     "phrases": [
       "Software Engineer. ",
       "Web Developer. ",
@@ -136,7 +139,7 @@ const translations = {
     "serv-web-title": "Développement Web",
     "serv-web-desc": "Des sites web réactifs aux applications web complexes, je fournis des solutions robustes utilisant des technologies de pointe. Mon expertise garantit une performance et une évolutivité optimales.",
     "serv-design-title": "Design UI/UX",
-    "serv-design-desc": "Je conçois des interfaces utilisateur intuitives et visuellement attrayantes qui améliorent l'expérience utilisateur. En alliant esthétique et fonctionnalité, je crée des produits numériques qui sont non seulement superbes, mais offrent également des interactions fluides et engageantes pour vos utilisateurs.",
+    "serv-design-desc": "Je conçois des interfaces utilisateur intuitives et visuellement attrayantes qui amélioreront l'expérience utilisateur. En alliant esthétique et fonctionnalité, je crée des produits numériques qui sont non seulement superbes, mais offrent également des interactions fluides et engageantes pour vos utilisateurs.",
     "serv-content-title": "Création de Contenu",
     "serv-content-desc": "Je crée du contenu numérique captivant qui résonne avec votre audience et renforce votre identité de marque. Des articles de blog et contenus réseaux sociaux à la documentation technique, je livre des messages clairs, concis et percutants.",
     "serv-db-title": "Conception et Gestion de Base de Données",
@@ -144,14 +147,16 @@ const translations = {
     "serv-api-title": "Développement d'API",
     "serv-api-desc": "Je développe des API robustes et bien documentées qui permettent une communication fluide entre les systèmes logiciels. Qu'elles soient RESTful ou GraphQL, mes API sont conçues pour l'efficacité, l'évolutivité et une intégration sans effort.",
     "projects-title": "Projets",
-    "proj-nexaflow-title": "NexaFlow - Gestion E-Commerce, POS & Ventes Complète",
-    "proj-nexaflow-desc": "Une solution d'entreprise robuste et 100% configurable pour l'E-commerce et le POS. Inclut la gestion avancée des stocks, des passerelles de paiement intégrées, des systèmes de promotions dynamiques, des programmes de fidélité client, et des analyses de ventes en temps réel.",
+    "proj-nexaflow-title": "NexaFlow - Gestion E-Commerce, POS, Ventes & Stocks",
+    "proj-nexaflow-desc": "Une solution d'entreprise robuste et 100% configurable pour l'E-commerce, le POS et la gestion de stocks. Inclut le suivi des stocks en temps réel, des passerelles de paiement intégrées, des systèmes de promotions dynamiques et des analyses de ventes avancées.",
     "proj-hr-title": "PayrollPro - Système de Gestion RH & Paie",
     "proj-hr-desc": "Une plateforme complète de gestion des ressources humaines et de la paie. Gère les calculs automatisés des salaires, le suivi des performances, la gestion des congés et les flux de conformité fiscale complexes.",
     "proj-fintrack-title": "FinTrack - Gestion Financière & Budget par IA",
     "proj-fintrack-desc": "Un écosystème financier intelligent avec tableaux de bord temps réel, conseiller IA pour optimiser les dépenses et suivi d'objectifs d'épargne. Supporte le multi-devises (XOF, EUR, USD, GBP), la conversion automatique et une version PWA pour un accès mobile hors-ligne.",
     "proj-archive-title": "ArchiveHub - Gestion des Archives, Document & OCR",
     "proj-archive-desc": "Un système d'archivage numérique robuste incluant l'OCR pour l'extraction automatique de texte. Offre une recherche plein texte ultra-rapide (Elasticsearch), le versionnage de documents et une gestion hautement sécurisée des accès et une piste audit.",
+    "proj-medagenda-title": "MedAgenda - Gestion Médicale & Hospitalière Complète",
+    "proj-medagenda-desc": "Une plateforme HIS tout-en-un conçue pour les cliniques et centres de santé. Centralise la gestion des patients, rendez-vous, facturation, pharmacie, stocks labo et file d'attente avec un système de permissions multi-rôles granulaire.",
     "filter-all": "Tous",
     "filter-web": "Web",
     "filter-uiux": "UI/UX",
@@ -215,6 +220,7 @@ const translations = {
     "skill-illustrator": "Adobe Illustrator",
     "footer-built": "Fait avec amour ❤️ par AGUIGAH K. Eric A.K.A rizux",
     "rights": "Tous droits réservés.",
+    "proj-coming-soon": "En cours de développement / Bientôt disponible",
     "phrases": [
       "Ingénieur Logiciel. ",
       "Développeur Web. ",
@@ -269,9 +275,18 @@ function updateLanguage(lang) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    if (translations[lang][key]) {
+      el.title = translations[lang][key];
+    }
+  });
+
   const langToggle = document.getElementById("lang-toggle");
-  langToggle.querySelector("span").textContent = lang === "en" ? "FR" : "EN";
-  langToggle.setAttribute("data-lang", lang);
+  if (langToggle) {
+    langToggle.querySelector("span").textContent = lang === "en" ? "FR" : "EN";
+    langToggle.setAttribute("data-lang", lang);
+  }
   
   // Update phrases for typing effect
   phrases = translations[lang].phrases;
@@ -282,361 +297,221 @@ function updateLanguage(lang) {
   localStorage.setItem("lang", lang);
 }
 
-// Language Toggle Event
+// Global Event Listeners
 document.addEventListener("DOMContentLoaded", () => {
+  // Language Toggle Event
   const langToggle = document.getElementById("lang-toggle");
-  langToggle.addEventListener("click", () => {
-    const newLang = langToggle.getAttribute("data-lang") === "en" ? "fr" : "en";
-    updateLanguage(newLang);
-  });
+  if (langToggle) {
+    langToggle.addEventListener("click", () => {
+      const newLang = langToggle.getAttribute("data-lang") === "en" ? "fr" : "en";
+      updateLanguage(newLang);
+    });
+  }
   
   // Apply initial language
   updateLanguage(currentLang);
-});
+  typeEffect();
 
-// Démarre l'animation
-typeEffect();
-
-//Mettre active sur les filtres
-const filterButtons = document.querySelectorAll(".filter-btn");
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section"); // Toutes les sections
-  const navLinks = document.querySelectorAll(".nav-links li"); // Liens de navigation
-
-  window.addEventListener("scroll", () => {
-    let currentSection = "";
-
-    // Détecte la section visible
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (window.scrollY >= sectionTop - sectionHeight / 3) {
-        currentSection = section.getAttribute("id");
-      }
-    });
-
-    // Ajoute et enlève la classe 'active'
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (
-        link.querySelector("a").getAttribute("href").includes(currentSection)
-      ) {
-        link.classList.add("active");
-      }
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector(".testimonials-container");
-  const testimonials = document.querySelectorAll(".testimonial");
-  const prevBtn = document.querySelector("#prev-btn");
-  const nextBtn = document.querySelector("#next-btn");
-
-  let currentIndex = 0; // Index actuel
-  const testimonialCount = testimonials.length;
-
-  // Vérifier si l'écran est petit
-  const isSmallScreen = () => window.innerWidth <= 769;
-
-  // Fonction pour afficher les témoignages
-  const showTestimonials = () => {
-    const displayCount = isSmallScreen() ? 1 : 2; // Affiche 1 ou 2 témoignages selon la taille de l'écran
-
-    testimonials.forEach((testimonial, index) => {
-      if (index >= currentIndex && index < currentIndex + displayCount) {
-        testimonial.style.display = "block"; // Afficher les témoignages actifs
-        testimonial.style.opacity = "1";
-      } else {
-        testimonial.style.display = "none"; // Masquer les autres
-        testimonial.style.opacity = "0";
-      }
-    });
-  };
-
-  // Afficher les témoignages suivants
-  const nextTestimonials = () => {
-    currentIndex = (currentIndex + 1) % testimonialCount; // Passer au témoignage suivant
-    showTestimonials();
-  };
-
-  // Afficher les témoignages précédents
-  const prevTestimonials = () => {
-    currentIndex = (currentIndex - 1 + testimonialCount) % testimonialCount; // Passer au témoignage précédent
-    showTestimonials();
-  };
-
-  // Ajouter les événements sur les boutons
-  nextBtn.addEventListener("click", nextTestimonials);
-  prevBtn.addEventListener("click", prevTestimonials);
-
-  // Détecter les changements de taille de l'écran pour réajuster l'affichage
-  window.addEventListener("resize", showTestimonials);
-
-  // Défilement automatique toutes les 2 secondes (optionnel)
-  setInterval(() => {
-    nextTestimonials();
-  }, 5000);
-
-  // Afficher les témoignages initiaux
-  showTestimonials();
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const btnNavigation = document.querySelector(".btn-navigation");
-  const overlay = document.getElementById("overlay");
-
-  // Ouvrir le sidebar
-  menuToggle.addEventListener("click", () => {
-    btnNavigation.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
-
-  // Fermer le sidebar en cliquant sur l'overlay
-  overlay.addEventListener("click", () => {
-    btnNavigation.classList.remove("active");
-    overlay.classList.remove("active");
-  });
-
-  // Optionnel : Fermer le sidebar quand un lien est cliqué
-  const navItems = document.querySelectorAll(".btn-navigation .nav-item a");
-  navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      btnNavigation.classList.remove("active");
-      overlay.classList.remove("active");
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".statistic-item h2");
-
-  counters.forEach((counter) => {
-    const target = +counter.textContent.replace("+", ""); // Récupérer la valeur cible
-    counter.textContent = "0+"; // Initialiser à zéro
-
-    const updateCounter = () => {
-      const current = +counter.textContent.replace("+", ""); // Récupérer la valeur actuelle
-      const remaining = target - current; // Calculer ce qui reste
-      const increment = Math.ceil(remaining / 10000); // Réduire l'incrémentation à mesure qu'on approche
-
-      if (current < target) {
-        counter.textContent = `${current + increment}+`; // Mettre à jour le texte
-        setTimeout(updateCounter, 50); // Reappel avec un délai constant
-      } else {
-        counter.textContent = `${target}+`; // Fixe le nombre final
-      }
-    };
-
-    updateCounter();
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+  // Project Filtering
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      // Retirer la classe active des boutons
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
-      // Obtenir la catégorie sélectionnée
-      const category = button.textContent.toLowerCase();
-
-      // Filtrer les projets
+      const category = button.textContent.toLowerCase().trim();
       projectCards.forEach((card) => {
-        if (category === "all") {
-          card.style.display = "block";
-        } else if (card.classList.contains(category)) {
-          card.style.display = "block";
+        if (category === "all" || category === "tous") {
+          card.style.display = "flex";
+        } else if (card.classList.contains(category) || 
+                   (category === "applis" && card.classList.contains("apps")) ||
+                   (category === "apps" && card.classList.contains("apps"))) {
+          card.style.display = "flex";
         } else {
           card.style.display = "none";
         }
       });
     });
   });
-});
 
-// Theme Toggle Logic
-document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleBtn = document.getElementById("theme-toggle");
-  const themeIcon = themeToggleBtn.querySelector("i");
-  const currentTheme = localStorage.getItem("theme");
+  // Active Nav Link on Scroll
+  const sections = document.querySelectorAll("section, header");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-  if (currentTheme === "light") {
-    document.body.classList.add("light-theme");
-    themeIcon.classList.replace("fa-sun", "fa-moon");
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id") || "";
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      const href = link.querySelector("a").getAttribute("href");
+      if (href.includes(currentSection) && currentSection !== "") {
+        link.classList.add("active");
+      }
+    });
+  });
+
+  // Testimonials Slider
+  const testimonials = document.querySelectorAll(".testimonial");
+  const prevBtn = document.querySelector("#prev-btn");
+  const nextBtn = document.querySelector("#next-btn");
+  let testimonialIndex = 0;
+
+  const showTestimonials = () => {
+    const isSmall = window.innerWidth <= 769;
+    const displayCount = isSmall ? 1 : 2;
+    testimonials.forEach((t, i) => {
+      if (i >= testimonialIndex && i < testimonialIndex + displayCount) {
+        t.style.display = "block";
+        t.style.opacity = "1";
+      } else {
+        t.style.display = "none";
+        t.style.opacity = "0";
+      }
+    });
+  };
+
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener("click", () => {
+      testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+      showTestimonials();
+    });
+    prevBtn.addEventListener("click", () => {
+      testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+      showTestimonials();
+    });
+    setInterval(() => {
+      testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+      showTestimonials();
+    }, 5000);
+    showTestimonials();
+    window.addEventListener("resize", showTestimonials);
   }
 
-  themeToggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-theme");
-    let theme = "dark";
-    if (document.body.classList.contains("light-theme")) {
-      theme = "light";
-      themeIcon.classList.replace("fa-sun", "fa-moon");
-    } else {
-      themeIcon.classList.replace("fa-moon", "fa-sun");
+  // Sidebar Logic
+  const menuToggle = document.getElementById("menu-toggle");
+  const btnNavigation = document.querySelector(".btn-navigation");
+  const overlay = document.querySelector(".overlay");
+
+  if (menuToggle && btnNavigation) {
+    menuToggle.addEventListener("click", () => {
+      btnNavigation.classList.toggle("active");
+      if (overlay) overlay.classList.toggle("active");
+    });
+    if (overlay) {
+      overlay.addEventListener("click", () => {
+        btnNavigation.classList.remove("active");
+        overlay.classList.remove("active");
+      });
     }
-    localStorage.setItem("theme", theme);
+  }
+
+  // Stats Counter
+  const counters = document.querySelectorAll(".statistic-item h2");
+  counters.forEach((counter) => {
+    const target = +counter.textContent.replace("+", "");
+    counter.textContent = "0+";
+    const updateCounter = () => {
+      const current = +counter.textContent.replace("+", "");
+      const increment = Math.ceil((target - current) / 20);
+      if (current < target) {
+        counter.textContent = `${current + increment}+`;
+        setTimeout(updateCounter, 50);
+      } else {
+        counter.textContent = `${target}+`;
+      }
+    };
+    updateCounter();
   });
-});
 
-/* ==========================================================================
-   PREMIUM INTERACTIONS & CURSOR LOGIC
-   ========================================================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
+  // Custom Cursor Advanced Logic
   const cursorDot = document.querySelector(".cursor-dot");
   const cursorOutline = document.querySelector(".cursor-outline");
-  
   let posX = 0, posY = 0;
   let mouseX = 0, mouseY = 0;
+  let scale = 1;
 
-  // Smoothing for the outline
-  const delay = 0.15;
-
-  const animate = () => {
-    posX += (mouseX - posX) * delay;
-    posY += (mouseY - posY) * delay;
-
-    // Center the dot (8px / 2 = 4px offset)
-    cursorDot.style.transform = `translate(${mouseX - 4}px, ${mouseY - 4}px)`;
-    // Center the outline (40px / 2 = 20px offset)
-    cursorOutline.style.transform = `translate(${posX - 20}px, ${posY - 20}px)`;
-
-    requestAnimationFrame(animate);
+  const animateCursor = () => {
+    posX += (mouseX - posX) * 0.15;
+    posY += (mouseY - posY) * 0.15;
+    if (cursorDot) cursorDot.style.transform = `translate(${mouseX - 4}px, ${mouseY - 4}px) scale(${scale})`;
+    if (cursorOutline) cursorOutline.style.transform = `translate(${posX - 20}px, ${posY - 20}px) scale(${scale})`;
+    requestAnimationFrame(animateCursor);
   };
-  animate();
+  animateCursor();
 
   window.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    
-    // Ensure cursor is visible when moving
-    cursorDot.style.opacity = "1";
-    cursorOutline.style.opacity = "1";
+    if (cursorDot) cursorDot.style.opacity = "1";
+    if (cursorOutline) cursorOutline.style.opacity = "1";
   });
-
-  document.addEventListener("mouseleave", () => {
-    cursorDot.style.opacity = "0";
-    cursorOutline.style.opacity = "0";
-  });
-
-  document.addEventListener("mouseenter", () => {
-    cursorDot.style.opacity = "1";
-    cursorOutline.style.opacity = "1";
-  });
-
-
 
   // Cursor Hover Effects
-  const interactiveElements = document.querySelectorAll("a, button, .project-card, .service-card, .statistic-item");
-  
+  const interactiveElements = document.querySelectorAll("a, button, .project-card, .service-card, .statistic-item, .filter-btn");
   interactiveElements.forEach((el) => {
     el.addEventListener("mouseenter", () => {
       document.body.classList.add("cursor-hover");
+      scale = 1.5;
     });
     el.addEventListener("mouseleave", () => {
       document.body.classList.remove("cursor-hover");
-    });
-  });
-
-  // Magnetic Effect
-  const magneticElements = document.querySelectorAll(".magnetic");
-  magneticElements.forEach((el) => {
-    el.addEventListener("mousemove", (e) => {
-      const rect = el.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      
-      el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-    });
-    
-    el.addEventListener("mouseleave", () => {
-      el.style.transform = "translate(0px, 0px)";
+      scale = 1;
     });
   });
 
   // Card Glow Effect
   const cards = document.querySelectorAll(".service-card, .project-card");
   cards.forEach((card) => {
-    // Create glow element if not exists
     let glow = card.querySelector(".card-glow");
     if (!glow) {
       glow = document.createElement("div");
       glow.className = "card-glow";
       card.appendChild(glow);
     }
-
     card.addEventListener("mousemove", (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      
       glow.style.left = `${x}px`;
       glow.style.top = `${y}px`;
-
-      // Perspective Tilt
       const rotateX = (y - rect.height / 2) / 10;
       const rotateY = (rect.width / 2 - x) / 10;
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
     });
-
     card.addEventListener("mouseleave", () => {
       card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
     });
   });
 
-  // Reveal Text Animation (Split Characters)
-  const revealElements = document.querySelectorAll(".reveal-type");
-  revealElements.forEach((el) => {
-    const text = el.innerText;
-    el.innerHTML = "";
-    [...text].forEach((char, i) => {
-      const span = document.createElement("span");
-      span.innerText = char === " " ? "\u00A0" : char;
-      span.style.transitionDelay = `${i * 0.05}s`;
-      el.appendChild(span);
+  // Theme Toggle
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  if (themeToggleBtn) {
+    const themeIcon = themeToggleBtn.querySelector("i");
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-theme");
+      if (themeIcon) themeIcon.classList.replace("fa-sun", "fa-moon");
+    }
+    themeToggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+      const theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+      localStorage.setItem("theme", theme);
+      if (themeIcon) {
+        if (theme === "light") themeIcon.classList.replace("fa-sun", "fa-moon");
+        else themeIcon.classList.replace("fa-moon", "fa-sun");
+      }
     });
+  }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          el.classList.add("active");
-        }
-      });
-    }, { threshold: 0.1 });
-    
-    observer.observe(el);
-  });
-
-  // Project Image Dynamic Zoom
-  const projectImages = document.querySelectorAll(".project-image");
-  projectImages.forEach((wrapper) => {
-    const img = wrapper.querySelector("img");
-    
-    wrapper.addEventListener("mousemove", (e) => {
-      const rect = wrapper.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      
-      img.style.transformOrigin = `${x}% ${y}%`;
-    });
-    
-    wrapper.addEventListener("mouseleave", () => {
-      img.style.transformOrigin = "center center";
-    });
-  });
+  // Update year
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 });
-
-
